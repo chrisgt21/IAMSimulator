@@ -1,0 +1,15 @@
+{
+    "config": {
+        "s3": "S3_BUCKET_NAME",
+        "account": "",
+        "users": ["user_arn1"],
+        "groups": ["group_arn1"],
+        "roles": ["role_arn1"],
+        "services": [{
+            "service": "secretsmanager",
+            "permissions": ["Get:SecretValue"],
+            "resources": ["secret_arn1"]
+        }
+        ]
+    }
+    }
