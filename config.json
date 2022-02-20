@@ -5,11 +5,12 @@
         "users": ["user_arn1"],
         "groups": ["group_arn1"],
         "roles": ["role_arn1"],
-        "services": [{
+        "services": [
+            {
             "service": "secretsmanager",
             "permissions": ["Get:SecretValue"],
             "resources": ["secret_arn1"]
-        }
+            }
         ]
     }
-    }
+}
