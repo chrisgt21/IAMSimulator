@@ -12,13 +12,19 @@ In order to start using this Docker container, you will need to create a docker 
     - S3 Bucket name must be specified to share findings
 3. Build the docker image 
 
-`docker build . -t CUSTOM_NAME`
+```
+docker build . -t CUSTOM_NAME
+```
 
 4. Run the docker container
     - If you are running this container on an AWS instance (EC2, ECS, etc), no credentials need to be specified. If this container is not running within AWS, the environment variables must be set to gain access. 
 
-`docker run CUSTOM_NAME`
+```
+docker run CUSTOM_NAME
+```
 
-`docker run -e AWS_ACCESS_KEY={AWS_ACCESS_KEY} -e AWS_SECRET_ACCESS_KEY={AWS_SECRET_KEY} CUSTOM_NAME`
+```
+docker run -e AWS_ACCESS_KEY={AWS_ACCESS_KEY} -e AWS_SECRET_ACCESS_KEY={AWS_SECRET_KEY} CUSTOM_NAME
+```
 
 5. Check the S3 bucket you specified in the config file for the findings
